@@ -1,0 +1,11 @@
+this is the representatives list
+
+
+<ul>
+      <% @results.each do |result| %>
+        <li>
+          <a href="/senators/<%= result["bioguide_id"] %>"><%= result["title"] %>. <%= result["first_name"] %> <%= result["last_name"] %>, <%= result["state_name"] %></a>
+        </li>
+      <% end %>
+    </ul>
+
